@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zendesk AI Copilot Case Study | Dheeraj Kumar — Product Designer at Zendesk</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['selector', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          colors: {
+            onyxBg: '#090b0e',
+            cardDark: '#131620',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body class="bg-[#090b0e] text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 nav-blur transition-all duration-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      <a href="work.html" class="flex items-center gap-2 text-xs font-bold text-slate-300 hover:text-sky-400 transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>Back to Work</span>
+      </a>
+      <div class="flex items-center gap-4 text-xs font-bold text-slate-400">
+        <span>Dheeraj Kumar · Case Study</span>
+        <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-lg bg-white/10 hover:bg-white/15 text-slate-300">
+          <i id="theme-icon" data-lucide="sun" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Container (locked if not verified) -->
+  <div id="case-study-content" class="transition-opacity duration-300">
+    <main class="pt-24 sm:pt-32 pb-24 max-w-4xl mx-auto px-4 sm:px-6 space-y-12">
+      
+      <!-- Hero / Header -->
+      <div class="space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20">
+          Enterprise Case Study · Zendesk
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight tracking-framer">
+          Zendesk AI Copilot & Agent Workspace
+        </h1>
+        <p class="text-base sm:text-xl text-slate-300 leading-relaxed font-normal">
+          Designing an ambient, trustworthy AI assistant inside Zendesk’s high-volume ticket environment to eliminate cognitive context fatigue and accelerate customer resolution times.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 border-y border-white/10">
+          <div>
+            <div class="text-xs text-slate-400">My Role</div>
+            <div class="text-sm font-bold text-white mt-0.5">Product Designer</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Timeline</div>
+            <div class="text-sm font-bold text-white mt-0.5">Jan 2025 – Present</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Platform</div>
+            <div class="text-sm font-bold text-white mt-0.5">Zendesk Agent Suite</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Key Result</div>
+            <div class="text-sm font-bold text-sky-400 mt-0.5">-38% Resolution Time</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 1: Problem -->
+      <section class="space-y-4">
+        <span class="text-xs uppercase tracking-widest font-bold text-sky-400">01. The Problem</span>
+        <h2 class="text-2xl font-extrabold text-white tracking-tight">Cognitive Overload in Mission-Critical Support</h2>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Support agents handling complex enterprise tickets frequently review conversation threads containing dozens of back-and-forth emails, chat transcripts, internal notes, and technical logs. Our user research revealed agents spent up to 4 minutes per ticket simply synthesizing what had already happened before typing a single word.
+        </p>
+        <div class="p-6 rounded-2xl bg-[#12151c] border border-white/10 text-sm text-slate-300 italic border-l-4 border-l-sky-500 shadow-md">
+          “I have to scroll through 15 pages of chat history just to understand what the customer already tried. By the time I start writing, our SLA is already yellow.”
+          <span class="block text-xs text-slate-400 font-semibold mt-2 not-italic">— Tier-2 Enterprise Support Specialist</span>
+        </div>
+      </section>
+
+      <!-- Visual Mockup Container -->
+      <div class="rounded-2xl overflow-hidden border border-white/15 bg-slate-950 aspect-[16/10] shadow-2xl">
+        <img src="./assets/images/project-zendesk-ai.svg" alt="Zendesk AI Copilot Interface Architecture" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Section 2: Strategy & Human-in-the-Loop -->
+      <section class="space-y-4">
+        <span class="text-xs uppercase tracking-widest font-bold text-sky-400">02. Design Principles</span>
+        <h2 class="text-2xl font-extrabold text-white tracking-tight">Human-Centered AI Guardrails</h2>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Enterprise agents were wary of automated bot answers that risked hallucinating incorrect policy or technical guidance. We established three core principles:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+          <div class="p-5 rounded-2xl bg-[#12151c] border border-white/10 shadow-sm">
+            <div class="font-bold text-white text-sm mb-1">1. Ambient Presence</div>
+            <div class="text-xs text-slate-400 leading-relaxed">The copilot suggests insights silently in a peripheral drawer without hijacking active keyboard focus.</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-[#12151c] border border-white/10 shadow-sm">
+            <div class="font-bold text-white text-sm mb-1">2. Transparent Confidence</div>
+            <div class="text-xs text-slate-400 leading-relaxed">Every AI summary and recommendation cites exact source messages so agents verify facts in 1 click.</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-[#12151c] border border-white/10 shadow-sm">
+            <div class="font-bold text-white text-sm mb-1">3. Agent in Control</div>
+            <div class="text-xs text-slate-400 leading-relaxed">AI never sends autonomous replies to customers. Agents can accept, adjust tone, or discard with zero friction.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Quantitative Results -->
+      <section class="space-y-4">
+        <span class="text-xs uppercase tracking-widest font-bold text-sky-400">03. Measured Outcomes</span>
+        <h2 class="text-2xl font-extrabold text-white tracking-tight">Tangible Customer Impact</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="p-5 rounded-2xl bg-[#12151c] border border-white/10 shadow-sm">
+            <div class="text-3xl font-extrabold text-sky-400">38%</div>
+            <div class="text-xs text-slate-400 mt-1">Faster First Resolution</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-[#12151c] border border-white/10 shadow-sm">
+            <div class="text-3xl font-extrabold text-white">45,000+</div>
+            <div class="text-xs text-slate-400 mt-1">Daily Enterprise Agents</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-[#12151c] border border-white/10 shadow-sm">
+            <div class="text-3xl font-extrabold text-indigo-400">+24 pts</div>
+            <div class="text-xs text-slate-400 mt-1">Agent CSAT Satisfaction</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Footer -->
+      <div class="pt-8 border-t border-white/10 flex items-center justify-between">
+        <a href="work.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-xs font-bold text-white transition-colors">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>Back to Work</span>
+        </a>
+        <a href="mailto:dheeraj.kumar.design@gmail.com" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white text-xs font-bold transition-colors">
+          <span>Discuss This Project</span>
+          <i data-lucide="mail" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- PASSWORD MODAL (if opened without prior authentication) -->
+  <div id="password-modal" class="modal-overlay fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-4 sm:p-6">
+    <div class="modal-content-box bg-[#12151c] border border-white/15 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative text-white">
+      
+      <div class="space-y-3 mb-6 text-center">
+        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-500/25 flex items-center justify-center mx-auto mb-3 shadow-lg">
+          <i data-lucide="lock" class="w-6 h-6"></i>
+        </div>
+        <div class="inline-block px-3 py-1 rounded-full bg-white/5 text-[10px] font-mono font-bold uppercase tracking-wider text-slate-300 border border-white/10">
+          Confidential Case Study
+        </div>
+        <h3 class="text-xl sm:text-2xl font-extrabold text-white tracking-framer">
+          Enter Passcode
+        </h3>
+        <p class="text-xs text-slate-400 leading-relaxed max-w-xs mx-auto">
+          This case study is under NDA. Please enter the passcode to access.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div id="password-input-wrapper" class="relative">
+          <input 
+            type="password" 
+            id="template-pass-input" 
+            placeholder="Enter passcode (orbit31)" 
+            class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-400 font-medium"
+          />
+        </div>
+        <div id="template-pass-error" class="text-xs text-rose-400 font-bold hidden text-center"></div>
+
+        <button id="template-pass-btn" class="w-full py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-sky-500/25 transition-all">
+          Unlock Case Study
+        </button>
+
+        <div class="pt-4 border-t border-white/10 text-center text-[11px] text-slate-400">
+          Preview passcode: <span class="text-sky-300 font-mono font-bold">orbit31</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Direct check for standalone page
+    document.addEventListener('DOMContentLoaded', () => {
+      const isUnlocked = sessionStorage.getItem('work_authenticated') === 'orbit31';
+      const content = document.getElementById('case-study-content');
+      const pModal = document.getElementById('password-modal');
+      const passInput = document.getElementById('template-pass-input');
+      const passBtn = document.getElementById('template-pass-btn');
+      const passErr = document.getElementById('template-pass-error');
+
+      function updateTemplateAuth() {
+        const unlocked = sessionStorage.getItem('work_authenticated') === 'orbit31';
+        if (!unlocked) {
+          if (content) content.style.opacity = '0.05';
+          if (pModal) pModal.classList.add('open');
+          if (passInput) setTimeout(() => passInput.focus(), 150);
+        } else {
+          if (content) content.style.opacity = '1';
+          if (pModal) pModal.classList.remove('open');
+        }
+      }
+
+      updateTemplateAuth();
+
+      function submitTemplatePass() {
+        if (!passInput) return;
+        if (passInput.value.trim().toLowerCase() === 'orbit31') {
+          sessionStorage.setItem('work_authenticated', 'orbit31');
+          updateTemplateAuth();
+        } else {
+          if (passErr) {
+            passErr.textContent = 'Incorrect passcode. Please enter "orbit31".';
+            passErr.classList.remove('hidden');
+          }
+          passInput.focus();
+        }
+      }
+
+      if (passBtn) passBtn.addEventListener('click', submitTemplatePass);
+      if (passInput) passInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') submitTemplatePass();
+      });
+    });
+  </script>
+</body>
+</html>
