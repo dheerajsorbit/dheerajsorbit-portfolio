@@ -73,7 +73,7 @@ A pixel-perfect, fully responsive, and highly interactive portfolio website buil
   - Schema `@type: WebSite` with official branding.
 - **Semantic HTML & Meta:**
   - Target meta keywords and search descriptions emphasizing "Dheeraj Kumar", "Product Designer", "Zendesk Product Designer", "Enterprise SaaS Designer".
-  - Canonical URLs pointing to `https://dheerajkumar.design/`.
+  - Canonical URLs pointing to `https://dheerajsorbit.com/`.
   - Open Graph and Twitter Card tags.
   - Production `robots.txt` and `sitemap.xml`.
 

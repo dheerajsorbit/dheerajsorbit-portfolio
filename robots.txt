@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dheerajkumar.design/sitemap.xml
+Sitemap: https://dheerajsorbit.com/sitemap.xml
